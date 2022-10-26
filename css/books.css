@@ -1,0 +1,70 @@
+.books-wrapper {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+ gap: 1.5rem;
+ margin: auto;
+}
+.books .box {
+ margin: 2rem 0;
+ position: relative;
+ overflow: hidden;
+ border: var(--border);
+ text-align: center;
+}
+.books .box:hover {
+ border: var(--border-hover);
+}
+.books .box .image {
+ padding: 1rem;
+ background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+}
+.books .box:hover .image {
+ transform: translateY(6rem);
+}
+.books .box .image img {
+ height: 25rem;
+}
+.books .box .icons {
+ border-bottom: var(--border-hover);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: #fff;
+ z-index: 1;
+ transform: translateY(-105%);
+}
+.books .box:hover .icons {
+ transform: translateY(0%);
+}
+.books .box .icons a {
+ color: var(--black);
+ font-size: 2.2rem;
+ padding: 1.3rem 1.5rem;
+}
+.books .box .icons a:hover {
+ background: var(--green);
+ color: #fff;
+}
+.books .fa-shopping-cart span {
+ top: 0.5rem !important;
+ right: 0.5rem !important;
+}
+.books .box .content {
+ background: #eee;
+ padding: 1.5rem;
+}
+.books .box .content h3 {
+ font-size: 2rem;
+ color: var(--black);
+}
+.books .box .content .price {
+ font-size: 2.2rem;
+ color: var(--black);
+ padding-top: 1rem;
+}
+.books .box .content .price span {
+ font-size: 1.5rem;
+ color: var(--light-color);
+ text-decoration: line-through;
+}

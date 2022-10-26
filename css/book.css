@@ -1,0 +1,65 @@
+.book_box {
+ width: 100%;
+ display: flex;
+}
+@media (max-width: 600px) {
+ .book_box {
+  flex-wrap: wrap;
+ }
+}
+.book_box .book_image {
+ width: 500px;
+ max-width: 100%;
+}
+.book_box .book_image img {
+ width: 100%;
+}
+.book_info {
+ margin-top: 2rem;
+}
+.book_info h1 {
+ font-size: 4rem;
+ color: #333;
+}
+.book_info h5 {
+ font-weight: light !important;
+ letter-spacing: 1px;
+ font-size: 3rem;
+ color: #444;
+}
+.book_info p {
+ margin: 0.7rem 0;
+ font-weight: light;
+ letter-spacing: 0.5px;
+ font-size: 2rem;
+ color: #444;
+}
+.book-quantity {
+ width: fit-content;
+}
+.book-quantity div {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+}
+.book-quantity .btn {
+ margin-top: 0;
+}
+.book-quantity .btn-danger {
+ margin: 1rem 0;
+}
+.book-quantity p {
+ border-radius: 0.5rem;
+ padding: 1rem 2rem;
+ text-align: center;
+ font-weight: bold;
+ font-size: 1.5rem;
+ color: #222;
+ background-color: #eee;
+}
+.fa-heart {
+ color: #333;
+}
+.fa-heart.book-liked {
+ color: #27ae60 !important;
+}
